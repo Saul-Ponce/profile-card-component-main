@@ -1,38 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body {
+      margin: 0;
+      font-family: 'Kumbh Sans', sans-serif;
+      background-color: hsl(229, 23%, 23%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0px 30px;
+      min-height: calc(100vh - 200px);
+    }
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .body__container {
+      background-color: white;
+      border: 0px;
+      border-radius: 40px;
+      color: black;
+      padding: 60px 68px 40px;
+      min-height: 700px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-  <div class="card-body">
-    Victor Crest
-    26
-    London
-  
-    80K
-    Followers
-  
-    803K
-    Likes
-  
-    1.4K
-    Photos
+  <img class="circle__top" src="./images/bg-pattern-top.svg">
+  <div class="body__container">
+    <div class="body__background">
+      <img src="./images/bg-pattern-card.svg" alt="background">
+    </div>
+    <div class="body__porfile">
+      <img src="./images/image-victor.jpg" alt="image Profile">
+      <p>
+      <h3>
+        <b> Victor Crest </b>
+        26
+      </h3>
+      <h4>London</h4>
+      </p>
+    </div>
+
+    <div class="body__description">
+      <p>
+      <h3>80K</h3>
+      <h5>Followers</h5>
+      </p>
+
+      <p>
+      <h3>803K</h3>
+      <h5>Likes</h5>
+      </p>
+
+      <p>
+      <h3>1.4K</h3>
+      <h5>Photos</h5>
+      </p>
+    </div>
   </div>
+  <img class="circle__bottom" src="./images/bg-pattern-bottom.svg">
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Saul Ponce</a>.
   </div>
 </body>
+
 </html>
