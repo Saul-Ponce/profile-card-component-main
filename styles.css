@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: -226px -439px, 1025px 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+  }
+
+  p {
+    color: hsl(0, 0%, 59%);
+  }
+
+  .body__container {
+    background-color: white;
+    border: 0px;
+    border-radius: 20px;
+    color: black;
+    padding: 0px;
+  }
+
+  .body__background img {
+    border: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+
+  .body__porfile {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -35px;
+  }
+
+  .img__porfile {
+    border: 5px solid white;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -20px;
+    left: 128px;
+  }
+
+  .body__porfile b {
+    margin: 0px;
+    margin-bottom: revert;
+    border-top: 5px;
+    color: hsl(229, 23%, 23%);
+  }
+
+  .body__porfile p {
+    margin: 0px;
+    margin-bottom: revert;
+    border-top: 5px;
+  }
+
+  hr {
+    height: 1px;
+    background-color: hsl(0, 0%, 59%);
+  }
+
+  .body__description {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .body__description p {
+    margin: 0px;
+    margin-bottom: revert;
+    font-size: 12px;
+  }
+
+  .body__description h3 {
+    margin: 0px;
+    margin-top: revert;
+    margin-bottom: 10%;
+    color: hsl(229, 23%, 23%);
+  }
+
+  .attribution {
+    margin-top: 0.5%;
+    font-size: 11px;
+    text-align: center;
+    color: white;
+  }
+
+  .attribution a {
+    color: white;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-position: -681px -702px, 191px 258px;
+    }
+  }
