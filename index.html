@@ -12,81 +12,124 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      margin: 0;
+      margin: 125px;
       font-family: 'Kumbh Sans', sans-serif;
+      font-size: 18px;
       background-color: hsl(229, 23%, 23%);
+      background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+      background-repeat: no-repeat, no-repeat;
+      background-position: -110px -480px, 1200px 300px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      padding: 0px 30px;
-      min-height: calc(100vh - 200px);
+      
     }
 
     .body__container {
       background-color: white;
       border: 0px;
-      border-radius: 40px;
+      border-radius: 20px;
       color: black;
-      padding: 60px 68px 40px;
-      min-height: 700px;
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
+      padding: 0px 0px 5px;
+    }
+
+    .body__background img {
+      border: 0px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
 
 
-    * {
-      box-sizing: border-box;
+    .body__porfile {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .img__porfile {
+      border: 5px solid white;
+      border-radius: 100%;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 215px;
+      left: 900px;
+    }
+
+    .space__porfile{
+      padding: 25px;
+    }
+
+    .body__porfile p {
+      margin: 0px;
+      border-top: 5px;
+    }
+
+    hr {
+      height: 1px;
+      background-color: black;
+    }
+
+    .body__description {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      text-align: center;
     }
 
     .attribution {
       font-size: 11px;
       text-align: center;
+      color: white;
     }
 
     .attribution a {
-      color: hsl(228, 45%, 44%);
+      color: white;
     }
   </style>
 </head>
 
 <body>
-  <img class="circle__top" src="./images/bg-pattern-top.svg">
   <div class="body__container">
     <div class="body__background">
       <img src="./images/bg-pattern-card.svg" alt="background">
     </div>
     <div class="body__porfile">
-      <img src="./images/image-victor.jpg" alt="image Profile">
+      <img class="img__porfile" src="./images/image-victor.jpg" alt="image Porfile">
+      <p class="space__porfile"></p>
       <p>
-      <h3>
         <b> Victor Crest </b>
         26
-      </h3>
-      <h4>London</h4>
       </p>
+      <p>London</p>
     </div>
+
+    <hr>
 
     <div class="body__description">
-      <p>
-      <h3>80K</h3>
-      <h5>Followers</h5>
-      </p>
+      <div class="followers">
+        <h2>80K</h2>
+        <p>Followers</p>
+      </div>
 
-      <p>
-      <h3>803K</h3>
-      <h5>Likes</h5>
-      </p>
+      <div class="likes">
+        <h2>803K</h2>
+        <p>Likes</p>
+      </div>
 
-      <p>
-      <h3>1.4K</h3>
-      <h5>Photos</h5>
-      </p>
+      <div class="photos">
+        <h2>1.4K</h2>
+        <p>Photos</p>
+      </div>
+
     </div>
   </div>
-  <img class="circle__bottom" src="./images/bg-pattern-bottom.svg">
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Saul Ponce</a>.
