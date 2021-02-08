@@ -24,8 +24,9 @@
     background-color: white;
     border: 0px;
     border-radius: 20px;
-    color: black;
     padding: 0px;
+    box-shadow: -10px 10px 75px -27px hsl(229, 23%, 23%);
+
   }
 
   .body__background img {
